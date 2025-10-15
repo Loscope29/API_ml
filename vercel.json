@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/MedicalRiskapi.py",
+      "src": "api/api_vercel.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/MedicalRiskapi.py"
+      "dest": "api/api_vercel.py"
     }
   ]
 }
